@@ -1,0 +1,37 @@
+<snippet>
+    <content><![CDATA[
+---
+author: "${1:Alain Muls}"
+title: "${2:title of PDF}"
+header: "${3:left-header}"
+date: "\\\\today"
+numbersections: ${5:false}
+toc: ${6:false}
+geometry: "a4paper"
+language: "${7:language abbrevieation (en, dutch, french)}"
+fontsize: "12pt"
+hyperrefoptions:
+    - colorlinks=true
+    - linkcolor=blue
+---
+
+# Header 1
+
+## Header 2
+
+This is __bold__ and _italic_.
+
+A list is created using:
+
+- item 1
+	+ sub-item 1.1
+	+ sub-item 1.2
+- item 2
+
+Have fun
+
+]]></content>
+    <tabTrigger>yamlpdf</tabTrigger>
+    <scope>text.html.markdown.gfm</scope>
+    <description>Insert YAML header for small PDF</description>
+</snippet>

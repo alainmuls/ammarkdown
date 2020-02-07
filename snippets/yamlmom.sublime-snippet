@@ -1,0 +1,42 @@
+<snippet>
+    <content><![CDATA[
+---
+author: "${1:Alain Muls}"
+title: "MoM ${2:title}"
+header: "${3:left-header}"
+date: "${4:date}"
+present:
+    - AM
+    - PDK
+excused:
+    - yyy
+absent:
+    - zzz
+numbersections: ${5:false}
+toc: ${6:false}
+geometry: "a4paper"
+language: "en"
+colorlinks: true
+tableleft: true
+---
+
+# Header 1
+
+## Header 2
+
+This is __bold__ and _italic_.
+
+A list is created using:
+
+- item 1
+	+ sub-item 1.1
+	+ sub-item 1.2
+- item 2
+
+Have fun
+
+]]></content>
+    <tabTrigger>yamlmom</tabTrigger>
+    <scope>text.html.markdown.gfm</scope>
+    <description>Insert YAML section for MoM PDF</description>
+</snippet>

@@ -1,0 +1,15 @@
+{
+	"selector": "text.html.markdown.gfm, meta.paragraph.markdown",
+	"working_dir": "$file_path",
+
+	"variants":
+	[
+		{
+			"name": "PDF (eisvogel template, no section numbering)",
+			"shell_cmd": "/usr/bin/pandoc -f markdown -t latex -s --filter=\\${HOME}/.local/bin/pandoc-tablenos --filter=\\${HOME}/.local/bin/pandoc-fignos --filter=\\${HOME}/.local/bin/pandoc-eqnos --template=\\${HOME}/.pandoc/templates/eisvogel.tex -o $file_base_name.pdf $file",
+		},
+		{
+			"name": "PDF (eisvogel template, with section numbering)",
+			"shell_cmd": "/usr/bin/pandoc -f markdown -t latex -s --number-sections --filter=\\${HOME}/.local/bin/pandoc-tablenos --filter=\\${HOME}/.local/bin/pandoc-fignos --filter=\\${HOME}/.local/bin/pandoc-eqnos --template=\\${HOME}/.pandoc/templates/eisvogel.tex -o $file_base_name.pdf $file",
+		},	]
+}
