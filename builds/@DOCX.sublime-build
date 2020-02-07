@@ -1,4 +1,5 @@
 {
 	"selector": "text.html.markdown.gfm, meta.paragraph.markdown",
-	"working_dir""/usr/bin/pandoc -f markdown -t docx -s --smart --normalize --filter=\\${HOME}/.local/bin/pandoc-tablenos --filter=\\${HOME}/.local/bin/pandoc-fignos --filter=\\${HOME}/.local/bin/pandoc-eqnos -o $file_base_name.docx $file"
+	"working_dir": "$file_path",
+	"shell_cmd": "/usr/bin/pandoc -f markdown -t docx -s --smart --normalize --filter=\\${HOME}/.local/bin/pandoc-tablenos --filter=\\${HOME}/.local/bin/pandoc-fignos --filter=\\${HOME}/.local/bin/pandoc-eqnos -o $file_base_name.docx $file"
 }
