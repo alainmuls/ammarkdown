@@ -83,3 +83,4 @@ Once the `yaml` header is finished, you can start editing the document.
 For compiling and getting the output you go to `Tools` - `Build System` and select either `@PDF` or `@DOCX`. Press `<Ctrl-b>` and the corresponding `PDF` or `DOCX` file will be created (Figure @fig:pdf-outpu).
 
 ![PDF output](./FIGS/pdf-output.png ""){#pdf-aoutput}
+
